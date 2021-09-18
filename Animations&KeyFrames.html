@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations & Keyframe works</title>
+    <style>
+        .container {
+            background-color: rgb(18, 210, 235);
+        }
+
+        .box {
+            background-color: yellow;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: Aditi1;
+            animation-name: Aditi2;
+            animation-duration: 4s;  /*Defines duration of each iteration*/
+            animation-iteration-count: 3;
+            /* animation-fill-mode: alternate; After iteration is completed the animation reaches and stills at the 'to' width */
+            /* animation-timing-function: ease-in; First animation moves slowly then fast */
+            /* animation-delay: 3s; This delays the animation for 3s and then starts it */
+            /* animation-direction: reverse; */
+
+            /* animation: animation_name duration animation_timing_func aniamtion_delay animation_iteration_count animation_fill_mode;
+            shorthand for animation */
+        }
+        @keyframes Aditi2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+               top: 250px;
+               left: 250px;
+            }
+            100%{
+               top: 0px;
+               left: 250px;
+            }
+        }
+        @keyframes Aditi1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>
