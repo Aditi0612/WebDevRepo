@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h3>This is a form</h3>
+
+    <!-- This is used to denote the backened where the form data will be stored after submission -->
+    <form action="backend.php">
+
+        <!-- label tags are used to highlight the row which is clicked.The label for="" must be same as id="" -->
+        <!-- Div tag is used to divide something into lines just as br -->
+        <!-- Input tag is used to input various kinds of data like email,number,text,date,time,checkbox etc. -->
+        <label for="name">Name</label>
+        <div>
+        <input type="text" id="name">
+        </div><br>
+
+        <label for="role">Role:</label>
+        <div>
+            <input type="text" id="role">
+        </div><br>
+
+        <div>
+           Email:<input type="email">
+        </div><br>
+        
+        <!-- Select tag is used when we need to select from a number of options available -->
+        <div>
+            <label for="car">Car:</label>
+            <select name="Mycar" id="car">
+                <option value="i" selected>Indica</option>
+                <option value="s">Swift</option>
+                <option value="r">Ritz</option>
+            </select>
+        </div><br>
+        <div>
+
+        Date:<input type="date" name="Date">
+        </div><br>
+
+        <div>
+            Are you eligible:<input type="Checkbox">        
+        </div><br>
+
+        <div>
+            Bonus:<input type="Number">
+        </div><br>
+
+        <!-- Textarea tag is used to allot a definite blank space block to input text -->
+        <div>
+            Write about yourself <br><textarea name="text" cols="30" rows="10"></textarea>
+        </div><br>
+
+        <div>
+            Gender: Male<input type="radio" name="Mygender"> Female<input type="radio" name="Mygender"> Others<input type="radio" name="Mygender">
+        </div><br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset now">
+        </div><br>
+    </form>
+    
+</body>
+</html>
