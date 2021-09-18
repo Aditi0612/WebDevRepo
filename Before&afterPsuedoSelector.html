@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After Pseudo Selector</title>
+    
+    <style>
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            height: 500px;
+            justify-content: center;
+            font-size: 22px;
+            
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+           
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 0px 0px;
+            margin: 15px 15px;
+        }
+
+        section::before {
+            content: "Eat well, live simply, laugh often";
+        }
+
+        p {
+            text-align: center;
+        }
+
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;    /*opacity is used to lighter the img*/ 
+        }
+
+        h1{
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Kitchen stories</h1>
+        <p>Today the concept of kitchens is not just limited to household living but stretches a wider arena of social life.The covid-19 pandemic has opened doors for many of us to step in their kitchens and try something we always wanted to. Apart from the daily chappati,rice and pulses almost each kitchen has tried something new and unique. Each kitchen has its own stories of joys and celebrations. We are here to celebrate many such tasty and beautiful kitchen stories.</p>
+    </section>
+</body>
+
+</html>
