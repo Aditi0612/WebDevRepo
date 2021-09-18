@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        p{
+            /* There are 2 types of fonts: web fonts and web saved fonts */
+            /* Web saved fonts are preinstalled fonts of the operating system */
+            /* Web fonts are fonts that are not installed in the system and are needed to be exported from outside */
+            font-family: 'Dancing Script', cursive;
+            /* Font stack is to provide a prioritized list of fonts and apply any of the following present */
+            /* font-family: Georgia, 'Times New Roman', Times, serif; */
+            /* Google font is a great website to try various fonts */
+            font-size: 35px;
+            /* px = 1/96 th inch */
+            line-height: 0.9em;
+            /* Line height is a measure of the distance between 2 lines */
+        }
+
+        span
+        {
+            font-weight: bold;
+            font-style:normal;
+        }
+    </style>
+</head>
+<body>
+    <h3>Fonts in CSS</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,<span> This has to be in bold</span> natus autem vitae deserunt enim est. Ea ipsam reiciendis dolore labore ullam nesciunt cupiditate tenetur, aliquid impedit modi officiis sed eaque aut cum harum odit laboriosam</p>
+
+</body>
+</html>
