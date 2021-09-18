@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <!-- Media queries are a way to give responsiveness to the webpage using if type conditions -->
+    <style>
+        .box{
+            background-color: red;
+            color: white;
+            font-size: 52px;
+            text-align: center;
+            display: none;
+        }
+
+        /* This media query says that if the screen/viewport width is less than or equal to 300px then display of that box is blocked and it appears on the screen */
+        /* Screen denotes that we want to support only screen responsive media support queries */
+        @media only screen and (max-width:300px)
+        {
+            #box1{
+                display: block;
+                background-color: crimson;
+            }
+        }
+        
+        /* This media is fired/injected if screen width>=300px and screen width<=500px */
+        @media only screen and (min-width:300px) and (max-width:500px)
+        {
+            #box2{
+                display: block;
+                background-color: aqua;
+                color: blue;
+            }
+        }
+        
+        /* This media is fired/injected if screen width>=500px and screen width<=800px */
+        @media only screen and (min-width:500px) and (max-width:800px)
+        {
+            #box3{
+                display: block;
+                background-color:rgb(182, 243, 132);
+            }
+        }
+
+        /* This media is fired/injected if screen width>=800px*/ 
+        @media only screen and (min-width:800px)
+        {
+            #box4{
+                display: block;
+                background-color:rgb(231, 23, 138);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Iphone</div>
+    <div class="box" id="box2">Tablet</div>
+    <div class="box" id="box3">Laptop</div>
+    <div class="box" id="box4">Computer</div>
+</body>
+</html>
