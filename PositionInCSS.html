@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        /*Position: static(default), absolut, relative, sticky, fixed*/
+        
+        .container{
+            border: 3px solid navy;
+            background-color: bisque;
+            height: 3000px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid crimson;
+            width: 150px;
+            height: 150px;
+            margin: 4px;
+        }
+
+        #box3{
+            /*position:relative means relative to its normal position and will leave a gap at its original position*/
+            /*position: relative;
+            top: 35px;  box 3 is shifted 35px from top from its original position
+            left: 35px;*/
+
+            /* In case of absolute position, no space is left when the element is moved from original position unlike relative position instead the gap is filled by other elements */
+            /* position: absolute means relative to the position of first parent, here conatiner */
+            /* position: absolute; 
+            top: 35px;
+            /* left: 35px; */
+
+            /* position: fixed means position relative to browser window 
+            position: fixed;
+            /* right: 34px; */
+
+            /* position: sticky means element sticks to its position wrt browser */
+            position: sticky;
+            top: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </div> 
+</body>
+</html>
