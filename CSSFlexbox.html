@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            height: 444px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /*To initialise container as flexbox*/
+
+            /* flex properties for flex container */
+            /* flex-direction: column;
+            flex-direction: row  by default 
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;*/
+
+            flex-wrap: wrap;
+            /*By default no wrap*/
+
+            /* To set flex direction and flex wrap at the same time we use flex flow */
+            /* flex-flow: row wrap; */
+
+            /* justify-content is used to align content inside the flex box in horizontal direction*/
+            /* justify-content: center; */
+            /*  justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; This gives each element equal space on its left and right */
+
+            /* align-items is used to align items inside the flex box in vertical direction */
+            /* align-items: center; Aligns item at the centre vertically */
+            /* align-items: flex-end; */
+            align-items: flex-start; /* By default */
+            /* align-items: stretch; Evenly spaces element on stretching */
+        }
+
+        .item {
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1{
+            /*Flex properties for flex item*/ 
+            /* the one with higher order is placed at last */
+            /* order: 2; */
+            /* flex-grow: 2; element grows more rapidly in the container whenever flex box is expanded */
+            /* flex grow is never used with -ve number */
+            /* flex-shrink: 2; It works just opposite of flex-grow */
+
+        }
+        #item-2{
+            /* order: 8; */
+            /* flex-basis: 320px;  */
+            /*Flex basis is used to control width of a particular flex item when flex direction is row */
+            /*Flex basis is used to control height of a particular flex item when flex direction is column */
+        }
+        #item-3{
+            /* order: 5; */
+            /* flex: flex-grow flex-shrink flex-basis; */
+            /* flex: 2 2 344px; */
+            /* align-self: flex-end; */
+            /* align-self: flex-start;  By default */
+            /* align-self: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is Flexbox</h2>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+
+</html>
