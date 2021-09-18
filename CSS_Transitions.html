@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Transitions</title>
+    <style>
+       #box{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background-color: aqua;
+           height: 200px;
+           width: 400px;
+
+           /*Background color is transitioned from aqua to voilet*/
+           transition-property: background-color;
+
+           /*Time taken in transition is transition duration*/
+           transition-duration: 2s;
+
+           /*Way we want out transition to happen i.e first slowly then fast or vice-versa*/
+           transition-timing-function: ease-in;
+
+           /*Time after which transition starts is called transition delay*/
+           transition-delay: 0.5s;
+
+           /*Shorthand for transition*/
+           /* transition: background-color 2s ease-in 0.5s; */
+
+           /*All denotes transition in all properties like bg color, height, width etc.*/
+           transition: all 2s ease-in 0.5s;
+       }
+
+       #box:hover{
+           background-color: blueviolet;
+           height: 400px;
+           width: 600px;
+           border-radius: 40px;
+           font-size: 30px;
+       }
+    </style>
+</head>
+<body>
+    <h2>This is CSS Transitions</h2>
+    <div class="container">
+       <div id="box">
+           This is my box
+       </div> 
+    </div>
+</body>
+</html>
