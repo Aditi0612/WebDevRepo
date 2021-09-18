@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        *{
+             box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Dancing Script', cursive;
+            font-size:larger;
+            font-weight: bolder;
+        }
+
+       .container{
+           width: 600px;
+           border: 3px solid red;
+           margin: 57px auto;
+           background-color: rgb(238, 211, 161);
+
+       } 
+
+       .item{
+           border: 3px solid grey;
+           margin: 12px 3px;
+           padding: 12px 3px;
+           background:rgb(248, 175, 191);
+       }
+
+       #fruits{
+            float: left; 
+            width: 48.5%;
+       }
+
+       #computers{
+           float:left; 
+           width: 49%;
+        }
+        /* In order to prevent overlapping of float and non floating elements we use clear */
+       #stationary{
+           /* float: left; */
+           clear: both;
+           clear:left;
+           width: 99%;
+        }
+
+        p,h2,h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Welcome to my store</h2>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                <ul type="circle">
+                    <li>Orange</li>
+                    <li>Banana</li>
+                    <li>Apple</li>
+                    <li>Mango</li>
+                </ul>
+            </p>
+        </div>    
+
+        <div id="computers" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                <ul type="circle">
+                    <li>Hard disk</li>
+                    <li>Mouse</li>
+                    <li>Keyboard</li>
+                    <li>CPU</li>
+                </ul> 
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                <ul type="circle">
+                    <li>Pen</li>
+                    <li>Copy</li>
+                    <li>Eraser</li>
+                    <li>Scale</li>
+                </ul>
+             </p>
+        </div>
+    </div>
+</body>
+</html>
