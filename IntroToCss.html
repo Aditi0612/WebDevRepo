@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+    <!-- The styling done later takes higher precedence in case of internal and external css.Here internal->external.If in case we want to adhere to something at lower priority we use important with it. -->
+    <!-- This is external CSS -->
+    <link rel="stylesheet" href="IntroToCss.css">
+    <!-- This is internal CSS -->
+    <style>
+       p{
+           color: greenyellow;
+           background-color: tomato; 
+        }
+    </style>
+</head>
+<body>
+    <h3>This is CSS Introduction</h3>
+    <!-- This is example of inline CSS -->
+    <!-- Inline CSS is at highest priority in CSS -->
+    <p style="color: red; background-color: yellow;">CSS stands for cascading style sheets.These are used to style a raw html page.</p>
+    <p>There are 3 types of HTML - Inline, Internal, External.</p>
+</body>
+</html>
