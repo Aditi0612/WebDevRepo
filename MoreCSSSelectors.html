@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selectors</title>
+    <style>
+     h2{
+         text-align: center;
+         color: red;
+         background-color: blanchedalmond;
+         font-weight: bold;
+     }
+    /* This CSS is applied if 'p' is right inside any <li></li> which in turn is inside any <div></div> */
+    /* div li p{
+         color: blue;
+         background-color: aqua;
+         font-weight: bold;
+    } */
+
+   
+    /* here > denotes direct paragraph child of div */
+    /* This CSS is applied if 'p' is right inside <div></div> */
+    /* div > p{
+         color: blue;
+         background-color: aqua;
+         /* font-weight: bold; */
+
+    
+    /* This property will be applied on the paragraph whose last/just previous sibling is div */
+    /* This CSS will be applied if 'p' is right after <div></div> */
+    div+p{
+         color: white;
+         background-color: red;
+    }
+    </style>
+</head>
+<body>
+    <h2>More on CSS Selectors</h2>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is inside unordered list</p></li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is yet another paragraph</p>
+    </div>
+    <p>This is the outermost paragraph</p>
+</body>
+</html>
