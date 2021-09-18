@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute,nth child and pseudo selector</title>
+    <style>
+        .container{
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+
+        input{
+            display: block;
+        }
+        
+        /*This pseudo selector CSS is applied when the input type in the form is 'text'*/
+        input[type='text']
+        {
+            padding: 3px;
+            border: 2px solid red;
+        }
+        
+        /*This CSS is applied on that <a></a> where target is set*/
+        a[target]{
+            font-size: 23px;
+            color: green;
+        }
+        
+        /* This pseudo selector applies the CSS on the nth element of li */
+        li:nth-child(3)
+        {
+            color: red;
+        }
+        
+        li:nth-child(5)
+        {
+            color:blue;
+        }
+        
+
+        /* This pseudo selector applies the CSS on every second element i.e element 2, element 4, element 6... 
+        li:nth-child(2n+0)
+        {
+            color: olivedrab;
+        } */
+        
+        /* This pseudo selector is applied on every odd positioned element in the list */
+        li:nth-child(odd)
+        {
+            color: orangered;
+            background-color: rgb(245, 165, 156);
+        }
+
+        /* This pseudo selector appplies CSS on every even positioned element in the list */
+        li:nth-child(even)
+        {
+            color: purple;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+       <form action="" class="form-control">
+           <input type="text" placeholder="Enter your name">
+           <input type="password" placeholder="Enter your password">
+           <input type="Submit" placeholder="Submit">
+       </form>
+
+        <ul>
+            <li class="item" id="item-1">Item 1</li>
+            <li class="item" id="item-2">Item 2</li>
+            <li class="item" id="item-3">Item 3</li>
+            <li class="item" id="item-4">Item 4</li>
+            <li class="item" id="item-5">Item 5</li>
+            <li class="item" id="item-6">Item 6</li>
+            <li class="item" id="item-7">Item 7</li>
+            <li class="item" id="item-8">Item 8</li>
+        </ul>
+    </div>
+</body>
+</html>
