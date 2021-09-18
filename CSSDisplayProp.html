@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        /*Display inline means element aquires only req space*/
+        /*Display block means element takes a complete block*/
+        /*Margin can be applied on Didplay block elements*/
+        img{
+            width: 35px;
+            display: block;
+            margin: auto;
+        }
+
+        h3{
+            font-family: cursive;
+            font-weight: bold;
+            margin: 0px;
+            text-align: center;
+        }
+
+        header{
+            margin: auto;
+            width: 1600px;
+            border:2px solid blue;
+        }
+        .box{
+            border: 2px solid blue;
+            background-color: cyan;
+            margin: 6px 0px;
+            padding: 23px;
+            width: 32%;
+            display: inline-block;
+        }
+
+        .heading{
+            margin: auto;
+            width: 1600px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://media-exp3.licdn.com/dms/image/C4D03AQF3RG8nfoXjfw/profile-displayphoto-shrink_800_800/0/1621149113374?e=1629331200&v=beta&t=OTFTSq5piYSP2YidgBkDWgBJaWGtOwa43WtbXLCtzVQ" alt="">
+        <h3>Welcome to Aditi's blog</h3>
+    </header>
+
+    <div class="box">
+        <h4 class="heading">This is heading</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt similique consequuntur exercitationem enim natus quo quibusdam qui doloremque, earum culpa obcaecati consequatur odit maxime eligendi soluta dolore quam fuga delectus odio necessitatibus? Reiciendis, enim.</p>
+    </div>
+    <div class="box">
+        <h4 class="heading">This is heading</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt similique consequuntur exercitationem enim natus quo quibusdam qui doloremque, earum culpa obcaecati consequatur odit maxime eligendi soluta dolore quam fuga delectus odio necessitatibus? Reiciendis, enim.</p>
+    </div>
+    <div class="box">
+        <h4 class="heading">This is heading</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt similique consequuntur exercitationem enim natus quo quibusdam qui doloremque, earum culpa obcaecati consequatur odit maxime eligendi soluta dolore quam fuga delectus odio necessitatibus? Reiciendis, enim.</p>
+    </div>
+
+</body>
+</html>
