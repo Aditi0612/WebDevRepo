@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            padding: 2px 3px;
+            /* border: 2px solid red; */
+            margin: 7px 7px;
+            background-color: rgb(192, 164, 164);
+            /*Box shadow: offset x offset y colour*/
+            /*Box shadow: offset x offset y blur_radius  spread_radius*/
+            box-shadow: 8px 8px 9px 1px rgb(142, 216, 235,2.5); /*if -8px -9px is written then box shadow is in upward direction otherwise in downwards direction. Also the third dimension is of blur radius, The fourth dimension is of spread radius*/
+
+            /*For inside shadow we use inset*/
+            /* box-shadow: inset 4px 4px green; */
+        }
+
+        .card h2{
+            text-shadow: 3px 3px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatem pariatur quia iusto beatae facere architecto, sit necessitatibus iste adipisci in, aperiam dolorem et nihil.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nisi sit perferendis ratione officia distinctio totam, aliquid accusamus quaerat veritatis aperiam exercitationem quae, fugiat quas.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card 3</h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quis provident, atque modi laudantium aspernatur dolore magnam enim quidem tenetur maiores nemo voluptas velit voluptate!
+        </div>
+    </div>
+</body>
+</html>
